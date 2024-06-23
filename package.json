@@ -1,0 +1,18 @@
+{
+  "name": "highest-of-the-hi",
+  "version": "1.0.0",
+  "description": "Highest of the HI is a fictional platform that allows developers of arcade-style games to",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Collins",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
