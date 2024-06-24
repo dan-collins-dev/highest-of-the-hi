@@ -22,7 +22,7 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 
 ### Current TODOS
 - [ ] Implement '/Games' route
-    - [ ] Implement GET
+    - [x] Implement GET
     - [ ] Implement GET/:id
     - [ ] Implement POST
 - [ ] Implement the HTML skeleton of the follow pages
