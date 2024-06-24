@@ -23,4 +23,25 @@ const getAllGames = async (resolve, reject) => {
     }
 };
 
-module.exports = { getAllGames };
+const getGameById = async (id, resolve, reject) => {
+    try {
+        // Grab "games.json"
+        const FILE_NAME = path.join(
+            path.dirname(__dirname),
+            "./files/games.json"
+        );
+
+        // Read the file
+        const gameData = await fs.readFile(FILE_NAME);
+
+        // Parse the game data and find the game with id that matches
+        // the passed "id" parameter
+        const game = JSON.parse(gameData).find((g) => g.id === id);
+
+        resolve(game);
+    } catch (error) {
+        reject(error);
+    }
+};
+
+module.exports = { getAllGames, getGameById };
