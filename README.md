@@ -15,3 +15,17 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 4. CD into the cloned directory.
 5. Run `npm install` to install required packages
 6. To start the development server, run `npm run dev`
+
+## Goals of this Project
+- Demonstrate my current knowledge of responsive web design
+- Demonstrate my current understanding of how to consume and create REST API's
+
+### Current TODOS
+- [ ] Implement '/Games' route
+    - [ ] Implement GET
+    - [ ] Implement GET/:id
+    - [ ] Implement POST
+- [ ] Implement the HTML skeleton of the follow pages
+    - [ ] index.html
+    - [ ] games.html
+    - [ ] search.html
