@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Tetris",
+        "dev_name": "Alexey Pajitnov",
+        "id": "57c317ff-f3f0-4bc1-87cf-b33b660e6276",
+        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
+        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
+    },
+    {
+        "name": "Galaga",
+        "dev_name": "Namco",
+        "id": "bcbb09ab-bad6-481e-b615-0ec5a7256846",
+        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
+        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
+    },
+    {
+        "name": "Missile Command",
+        "dev_name": "Dave Theurer",
+        "id": "314b6034-d296-42ee-b243-ddf76e8a9e26",
+        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
+        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
+    }
+]
