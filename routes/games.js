@@ -47,4 +47,22 @@ router.get("/:id", (req, res, next) => {
     );
 });
 
+// POST request for adding a game
+router.post("/", (req, res, next) => {
+    gamesController.addGame(
+        req.body,
+        (data) => {
+            res.status(201).json({
+                status: 201,
+                statusText: "Game Added",
+                message: `${req.body.name} Added`,
+                data: data,
+            });
+        },
+        (err) => {
+            next(err);
+        }
+    );
+});
+
 module.exports = router;

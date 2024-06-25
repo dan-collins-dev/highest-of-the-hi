@@ -24,7 +24,7 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - [ ] Implement '/Games' route
     - [x] Implement GET
     - [x] Implement GET/:id
-    - [ ] Implement POST
+    - [x] Implement POST
 - [ ] Implement the HTML skeleton of the follow pages
     - [ ] index.html
     - [ ] games.html
