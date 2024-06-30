@@ -1,0 +1,336 @@
+:root {
+    --bg-clr-dark: hsl(0, 100%, 36%);
+    --bg-clr-md: #8f3535;
+    --bg-clr-light: #877373;
+    --txt-clr-dark: black;
+    --txt-clr-light: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+}
+html {
+    scroll-behavior: smooth;
+}
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/****** Classes related to the navigation bar **********/
+
+.nav {
+    display: flex;
+    background-color: var(--bg-clr-dark);
+    color: var(--txt-clr-light);
+    padding: 1rem 0;
+}
+
+.nav__logo {
+    padding-left: 1.25rem;
+    align-self: center;
+}
+
+.nav__list {
+    margin-left: auto;
+    margin-right: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav__list-item {
+    list-style-type: none;
+    padding: 0.25rem;
+}
+.nav__list-item__link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.nav__list-item__link:hover {
+    color: hsl(83, 100%, 50%);
+}
+
+/****** Classes related to the Hero Section **********/
+
+.hero {
+    display: flex;
+    background-color: black;
+    background-size: cover;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__animation {
+    width: 17px;
+    height: 29px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.111)),
+        url("../images/tommy-modified-Sheet.png");
+    animation: shred 0.45s steps(4) infinite;
+
+    scale: 8;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    margin: 0 auto;
+}
+
+.hero__animation-wrapper {
+    position: absolute;
+}
+
+.hero__content {
+    width: 100%;
+    display: flex;
+}
+
+.hero__information {
+    padding: 0 1rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__title {
+    z-index: 10;
+    color: var(--txt-clr-light);
+    padding-bottom: 2rem;
+}
+
+.hero__desc {
+    z-index: 10;
+    color: var(--txt-clr-light);
+}
+
+.hero__buttons {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.hero__btn {
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    border: 0.25rem solid white;
+    background-color: var(--bg-clr-md);
+    color: var(--txt-clr-light);
+}
+
+.hero__btn:hover {
+    border-color: yellow;
+}
+
+/********** Classes for about section **************/
+
+.about {
+    padding: 3rem 1rem;
+    background-color: var(--bg-clr-md);
+    color: var(--txt-clr-light);
+    text-align: center;
+}
+
+.about__title {
+    padding-bottom: 1rem;
+}
+
+.about__paragraph {
+    margin: 1rem auto;
+    line-height: 1.75rem;
+}
+
+/********** Classes for featured games section **************/
+
+.featured-games {
+    padding: 3rem 1rem;
+    background-color: var(--bg-clr-light);
+    text-align: center;
+}
+
+.featured-games__title {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--txt-clr-dark);
+}
+
+.featured-games-wrapper {
+    display: flex;
+}
+
+.featured-games__card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 0.25rem solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    min-width: 30%;
+}
+
+.featured-games__card__name {
+    line-height: 1.7rem;
+    padding: 0.5rem 0;
+}
+
+.featured-games__card__developer {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    align-self: center;
+    align-content: flex-end;
+    flex-grow: 1;
+}
+
+/********** Classes for testimonials section **************/
+
+.testimonials {
+    padding: 3rem 1rem;
+    background-color: var(--bg-clr-light);
+    color: black;
+    text-align: center;
+}
+
+.testimonials__title {
+    padding-bottom: 1rem;
+    color: var(--txt-clr-dark);
+}
+
+.testimonials-wrapper {
+    display: flex;
+    margin-top: 1.5rem;
+}
+
+.testimonial__card {
+    border: 0.25rem solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    min-width: 30%;
+    background-color: white;
+}
+
+.testimonial__card__name {
+    text-align: center;
+    color: black;
+    line-height: 1.7rem;
+    padding: 0.5rem 0;
+}
+
+.testimonial__card__blurb {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    align-self: center;
+    align-content: flex-end;
+    flex-grow: 1;
+    line-height: 1.5rem;
+}
+
+/********** Classes for footer section **************/
+
+.footer__info {
+    background-color: var(--bg-clr-dark);
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+}
+
+/************* Animations ********************/
+
+@keyframes shred {
+    0% {
+        background-position: 0, 0;
+    }
+    100% {
+        background-position: 68px 0;
+    }
+}
+
+/****** Utility Classes *****/
+.hidden {
+    display: none;
+}
+
+/******* Media Queries ********/
+/*============================*/
+/* Desktop max px size: 1244 */
+
+@media (max-width: 1244px) {
+    body {
+        font-size: 100%;
+    }
+}
+
+/* Small sizes */
+
+@media (max-width: 750px) {
+    body {
+        font-size: 75%;
+    }
+    .nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav__logo {
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .nav__list {
+        background-color: #bb4c68;
+        margin-left: 0;
+        justify-content: center;
+        min-width: 100%;
+    }
+
+    .hero__content {
+        flex-direction: column;
+    }
+
+    .hero__title {
+        z-index: 10;
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 12rem;
+        align-self: center;
+    }
+
+    .hero__buttons {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+    }
+
+    .testimonials-wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero__animation {
+        scale: 6;
+        margin-bottom: 1rem;
+    }
+
+    .featured-games {
+        padding: 3rem 1rem;
+        color: black;
+        text-align: center;
+    }
+
+    .featured-games-wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .featured-games__card {
+        border: 0.25rem solid black;
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
