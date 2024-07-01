@@ -21,11 +21,11 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - Demonstrate my current understanding of how to consume and create REST API's
 
 ### Current TODOS
-- [ ] Implement '/Games' route
+- [x] Implement '/Games' route
     - [x] Implement GET
     - [x] Implement GET/:id
     - [x] Implement POST
 - [ ] Implement the HTML skeleton of the follow pages
-    - [ ] index.html
+    - [x] index.html
     - [ ] games.html
     - [ ] search.html
