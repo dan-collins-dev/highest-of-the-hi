@@ -28,4 +28,4 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - [ ] Implement the HTML skeleton of the follow pages
     - [x] index.html
     - [ ] games.html
-    - [ ] search.html
+    - [x] search.html

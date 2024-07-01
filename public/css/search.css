@@ -1,0 +1,199 @@
+:root {
+    --bg-clr-dark: hsl(0, 100%, 36%);
+    --bg-clr-md: #8f3535;
+    --bg-clr-light: #877373;
+    --txt-clr-dark: black;
+    --txt-clr-light: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body {
+    background-color: var(--bg-clr-light);
+}
+
+/****** Classes related to the navigation bar **********/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-clr-dark);
+    color: var(--txt-clr-light);
+    padding: 1rem 0;
+}
+
+.nav__logo {
+    padding-left: 1.25rem;
+    align-self: center;
+}
+
+.nav__list {
+    margin-left: auto;
+    margin-right: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list-item {
+    list-style-type: none;
+    padding: 0.25rem;
+}
+
+.nav__list-item__link {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.nav__list-item__link:hover {
+    color: hsl(83, 100%, 50%);
+}
+
+/********** Class for Search Section ****************/
+
+.search {
+    background-color: var(--txt-clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.search__title {
+    color: var(--txt-clr-light);
+    padding: 1rem 0;
+}
+
+.search__search-bar-wrapper {
+    width: 100%;
+}
+
+.search__search-form {
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.search__search-bar {
+    margin-left: auto;
+    margin-right: 1.5rem;
+}
+
+.search__search-input {
+    padding: 1rem;
+    border: 0.25rem solid var(--bg-clr-dark);
+}
+
+.search__search-btn {
+    padding: 1rem;
+    border: 0.25rem solid white;
+    background-color: var(--bg-clr-md);
+    color: var(--txt-clr-light);
+}
+
+.search__search-btn:hover {
+    border-color: yellow;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+}
+
+.games__card {
+    display: flex;
+    flex-direction: column;
+    border: 0.25rem solid black;
+    flex-grow: 1;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--txt-clr-light);
+}
+
+.games__game-name {
+    margin: 0.5rem;
+}
+
+.games__game-developer {
+    margin: 0.5rem;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/********** Classes for footer section **************/
+
+.footer__info {
+    background-color: var(--bg-clr-dark);
+    text-align: center;
+    padding: 1.5rem;
+    color: white;
+}
+
+/****** Utility Classes *****/
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav {
+        flex-direction: column;
+        background-color: var(--bg-clr-dark);
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .nav__logo {
+        padding: 0;
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .nav__list {
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .search__search-form {
+        gap: 1rem;
+    }
+
+    .search__search-input {
+        padding: 0.75rem;
+        border: 0.25rem solid var(--bg-clr-dark);
+    }
+}
