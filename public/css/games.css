@@ -17,16 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-size: 90%;
-}
-
-.press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .page-wrapper {
     display: flex;
     min-height: 100dvh;
@@ -36,9 +26,8 @@ body {
 
 body {
     background-color: var(--bg-clr-light);
+    font-size: 90%;
 }
-
-/****** Classes related to the navigation bar **********/
 
 .nav {
     display: flex;
@@ -75,58 +64,33 @@ body {
     color: hsl(83, 100%, 50%);
 }
 
-/********** Class for Search Section ****************/
-
-.search {
-    background-color: var(--txt-clr-dark);
+.games-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.search__title {
+    padding: 2rem;
+    background-color: var(--txt-clr-dark);
     color: var(--txt-clr-light);
-    padding: 1rem 0;
-}
-
-.search__search-bar-wrapper {
-    width: 100%;
-}
-
-.search__search-form {
-    padding: 1rem 0;
-    display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
 }
 
-.search__search-bar {
-    margin-left: auto;
-    margin-right: 1.5rem;
-}
+/* .games-header__title {
 
-.search__search-input {
-    padding: 1rem;
+} */
+
+.games-header__filter {
+    padding: .5rem;
     border: 0.25rem solid var(--bg-clr-dark);
+    min-width: 50dvw;
+    max-width: 75%;
 }
 
-.search__search-btn {
-    padding: 1rem;
-    border: 0.25rem solid white;
-    background-color: var(--bg-clr-md);
-    color: var(--txt-clr-light);
-}
-
-.search__search-btn:hover {
-    border-color: yellow;
-}
 
 .games {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .games__card {
@@ -143,17 +107,18 @@ body {
 
 .games__game-name {
     margin: 0.5rem;
+    text-align: center;
+    line-height: 2rem;
 }
 
 .games__game-developer {
     margin: 0.5rem;
+    padding: 1rem 0;
 }
 
 .footer {
     margin-top: auto;
 }
-
-/********** Classes for footer section **************/
 
 .footer__info {
     background-color: var(--bg-clr-dark);
@@ -162,16 +127,21 @@ body {
     color: white;
 }
 
-/****** Utility Classes *****/
-.hidden {
-    display: none;
-}
+
+
 
 @media (max-width: 768px) {
     body {
         font-size: 75%;
     }
+
+    .games {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+
 
 @media (max-width: 425px) {
     .nav {
@@ -192,12 +162,8 @@ body {
         margin: 0;
     }
 
-    .search__search-form {
-        gap: 1rem;
-    }
-
-    .search__search-input {
-        padding: 0.75rem;
-        border: 0.25rem solid var(--bg-clr-dark);
+    .games {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

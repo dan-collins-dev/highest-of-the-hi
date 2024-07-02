@@ -2,18 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="description" content="Search for Games" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/search.css" />
+        <meta name="description" content="All Games" />
+        <link rel="stylesheet" href="./css/games.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
             rel="stylesheet"
         />
-        <title>Highest of the HI | Search for Games</title>
+        <title>Highest of the HI | All Games</title>
     </head>
-
     <body>
         <div class="page-wrapper">
             <header class="header">
@@ -33,39 +32,23 @@
                             >
                         </li>
                         <li class="nav__list-item">
-                            <a class="nav__list-item__link" href="./games.html"
-                                >Games</a
-                            >
+                            <a class="nav__list-item__link" href="#">Games</a>
                         </li>
                         <li class="nav__list-item">
-                            <a class="nav__list-item__link" href="#">Search</a>
+                            <a class="nav__list-item__link" href="./search.html">Search</a>
                         </li>
-                        <li class="nav__list-item hidden">
+                        <!-- <li class="nav__list-item hidden">
                             <a class="nav__list-item__link" href="#">Menu</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </header>
 
             <main>
-                <section class="search">
-                    <h1 class="search__title">Find A Game</h1>
-                    <div class="search__search-bar-wrapper">
-                        <form action="#" class="search__search-form">
-                            <input
-                                class="search__search-input"
-                                type="text"
-                                placeholder="Game Name..."
-                                name="search"
-                            />
-                            <button class="search__search-btn" type="submit">
-                                Find Game
-                            </button>
-                        </form>
-                    </div>
+                <section class="games-header">
+                    <h1 class="games-header__title">All Games</h1>
                 </section>
-
-                <section class="games">
+                <section id="games" class="games">
                     <article class="games__card">
                         <h3 class="games__game-name">Shred Quest</h3>
                         <p class="games__game-developer">dan.collins.dev</p>
@@ -85,5 +68,7 @@
                 <p class="footer__info">&copy; 2024 Dan Collins</p>
             </footer>
         </div>
+
+        <script src="./js/games.js"></script>
     </body>
 </html>
