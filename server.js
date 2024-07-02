@@ -20,6 +20,5 @@ app.use("/api/games", gamesRouter);
 // Serves the whole app
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
-    console.log(`Local Network hosting at http://192.168.254.96:${port}`)
     console.log("Press Ctrl+C to end this process.");
 });
