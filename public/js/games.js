@@ -1,18 +1,21 @@
 "use strict"
-
+const gameFilter = document.getElementById("game-filter")
 const allGames = []
 
 // Makes a GET request that returns all games
 const getGames = async () => {
-    const response = await fetch("http://localhost:6500/api/games");
-    let games = await response.json();
-
-    let gamesObj = Array.from(games.data);
-    gamesObj.forEach((game) => {
-        allGames.push(game);
-    });
-
-    renderGamesList()
+    try {
+        const response = await fetch("http://localhost:6500/api/games");
+        let games = await response.json();
+        let gamesObj = Array.from(games.data);
+        gamesObj.forEach((game) => {
+            allGames.push(game);
+        });
+    
+        renderGamesList()
+    } catch (error) {
+        console.log(error);
+    }
 };
 
 // create game card
@@ -40,5 +43,22 @@ const renderGamesList = async () => {
         createCard(game)
     })
 }
+
+const filterGames = (e) => {
+    const searchTerm = e.target.value.trim().toLowerCase();
+    const gameList = document.getElementById("games");
+    let games = Array.from(gameList.children)
+
+    games.forEach(game => {
+        game.classList.remove("hidden")
+
+        if (!game.innerText.toLowerCase().includes(searchTerm)) {
+            game.classList.toggle("hidden");
+        }
+    })
+}
+
+gameFilter.addEventListener("input", filterGames)
+
 
 getGames();
