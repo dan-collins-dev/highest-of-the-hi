@@ -1,69 +1,4 @@
-:root {
-    --bg-clr-dark: hsl(0, 100%, 36%);
-    --bg-clr-md: #8f3535;
-    --bg-clr-light: #877373;
-    --txt-clr-dark: black;
-    --txt-clr-light: white;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Press Start 2P";
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.page-wrapper {
-    display: flex;
-    min-height: 100dvh;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-body {
-    background-color: var(--bg-clr-light);
-    font-size: 90%;
-}
-
-.nav {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--bg-clr-dark);
-    color: var(--txt-clr-light);
-    padding: 1rem 0;
-}
-
-.nav__logo {
-    padding-left: 1.25rem;
-    align-self: center;
-}
-
-.nav__list {
-    margin-left: auto;
-    margin-right: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav__list-item {
-    list-style-type: none;
-    padding: 0.25rem;
-}
-
-.nav__list-item__link {
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-}
-
-.nav__list-item__link:hover {
-    color: hsl(83, 100%, 50%);
-}
-
+/********** Classes for Game Header Section ****************/
 .games-header {
     display: flex;
     flex-direction: column;
@@ -74,21 +9,15 @@ body {
     gap: 1rem;
 }
 
-/* .games-header__title {
-
-} */
-
 .games-header__filter {
-    padding: .5rem;
+    padding: 0.5rem;
     border: 0.25rem solid var(--bg-clr-dark);
     min-width: 50dvw;
     max-width: 75%;
 }
 
-
+/********** Classes for Game Section ****************/
 .games {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -116,54 +45,14 @@ body {
     padding: 1rem 0;
 }
 
-.footer {
-    margin-top: auto;
-}
-
-.footer__info {
-    background-color: var(--bg-clr-dark);
-    text-align: center;
-    padding: 1.5rem;
-    color: white;
-}
-
-.hidden {
-    display: none;
-}
-
-
 @media (max-width: 768px) {
-    body {
-        font-size: 75%;
-    }
-
     .games {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-
-
 @media (max-width: 425px) {
-    .nav {
-        flex-direction: column;
-        background-color: var(--bg-clr-dark);
-        flex-wrap: wrap;
-        padding: 1rem;
-    }
-
-    .nav__logo {
-        padding: 0;
-        margin: 0.5rem;
-        font-size: 1rem;
-    }
-
-    .nav__list {
-        justify-content: space-evenly;
-        margin: 0;
-    }
-
     .games {
         display: grid;
         grid-template-columns: 1fr;

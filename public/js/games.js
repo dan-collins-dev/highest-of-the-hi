@@ -61,4 +61,12 @@ const filterGames = (e) => {
 gameFilter.addEventListener("input", filterGames)
 
 
+// Quick Resize test for handling mobile menu closing if
+// its open and the window is resizes to a bigger screen
+/* window.addEventListener("resize", () => {
+    // if (document.innerHTML > )
+    console.log(`Window Width: ${window.innerWidth}`)
+    console.log("SOMETHING")
+}) */
+
 getGames();
