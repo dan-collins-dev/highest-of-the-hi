@@ -5,6 +5,7 @@ const app = express();
 const cors = require("cors");
 const port = process.env.PORT || 7000;
 const gamesRouter = require("./routes/games");
+const scoresRouter = require("./routes/scores")
 
 // Serves the front-end content in the "public" directory
 app.use(express.static("./public"));
@@ -16,6 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 
 // Setting the '/games' endpoint and related router
 app.use("/api/games", gamesRouter);
+
+// Setting the '/scores' endpoint and related router
+app.use("/api/scores", scoresRouter)
 
 // Serves the whole app
 app.listen(port, () => {
