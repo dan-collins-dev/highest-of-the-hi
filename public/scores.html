@@ -3,10 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="All Games" />
-
+        <meta name="description" content="Hiscores for a specific game" />
         <link rel="stylesheet" href="./css/site.css" />
-        <link rel="stylesheet" href="./css/games.css" />
+        <link rel="stylesheet" href="./css/scores.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +13,9 @@
             href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
             rel="stylesheet"
         />
-        <title>Highest of the HI | All Games</title>
+        <title>Highest of the HI | Scores</title>
     </head>
+
     <body>
         <div class="page-wrapper">
             <header class="header">
@@ -35,7 +35,9 @@
                             >
                         </li>
                         <li class="nav__list-item">
-                            <a class="nav__list-item__link" href="#">Games</a>
+                            <a class="nav__list-item__link" href="./games.html"
+                                >Games</a
+                            >
                         </li>
                         <li class="nav__list-item">
                             <a class="nav__list-item__link" href="./search.html"
@@ -43,39 +45,22 @@
                             >
                         </li>
                         <!-- <li class="nav__list-item hidden">
-                            <a class="nav__list-item__link" href="#">Menu</a>
-                        </li> -->
+                        <a class="nav__list-item__link" href="#">Menu</a>
+                    </li> -->
                     </ul>
                 </nav>
             </header>
 
             <main>
-                <section class="games-header">
-                    <h1 class="games-header__title">All Games</h1>
-                    <input
-                        type="text"
-                        placeholder="Game/Developer Name"
-                        class="games-header__filter"
-                        name="Filter Games"
-                        id="game-filter"
-                    />
+                <section class="scores-header">
+                    <h1 class="scores-header__title">Scores</h1>
                 </section>
-                <section id="games" class="games">
-                    <article class="games__card">
-                        <h3 class="games__game-name">
-                            <a href="http://localhost:6500/index.html"
-                                >Shred Quest</a
-                            >
-                        </h3>
-                        <p class="games__game-developer">dan.collins.dev</p>
-                    </article>
-                    <article class="games__card">
-                        <h3 class="games__game-name">Shred Quest 2</h3>
-                        <p class="games__game-developer">dan.collins.dev</p>
-                    </article>
-                    <article class="games__card">
-                        <h3 class="games__game-name">The Curse of Stulti</h3>
-                        <p class="games__game-developer">dan.collins.dev</p>
+
+                <section id="scores" class="scores">
+                    <article class="scores__card">
+                        <p class="scores__rank">Rank: 1</p>
+                        <p class="scores__player-name">Name</p>
+                        <p class="scores__score">100</p>
                     </article>
                 </section>
             </main>
@@ -85,6 +70,6 @@
             </footer>
         </div>
 
-        <script src="./js/games.js"></script>
+        <script src="./js/scores.js"></script>
     </body>
 </html>

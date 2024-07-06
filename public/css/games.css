@@ -16,6 +16,10 @@
     max-width: 75%;
 }
 
+.hidden {
+    display: none;
+}
+
 /********** Classes for Game Section ****************/
 .games {
     display: grid;

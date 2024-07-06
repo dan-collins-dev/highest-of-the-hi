@@ -1,6 +1,6 @@
-"use strict"
-const gameFilter = document.getElementById("game-filter")
-const allGames = []
+"use strict";
+const gameFilter = document.getElementById("game-filter");
+const allGames = [];
 
 // Makes a GET request that returns all games
 const getGames = async () => {
@@ -11,8 +11,8 @@ const getGames = async () => {
         gamesObj.forEach((game) => {
             allGames.push(game);
         });
-    
-        renderGamesList()
+
+        renderGamesList();
     } catch (error) {
         console.log(error);
     }
@@ -20,46 +20,45 @@ const getGames = async () => {
 
 // create game card
 const createCard = (gameEntry) => {
-    const gamesList = document.getElementById("games")
-    
+    const gamesList = document.getElementById("games");
+
     const card = document.createElement("article");
-    card.classList.add("games__card")
-    gamesList.appendChild(card)
-    
+    card.classList.add("games__card");
+    gamesList.appendChild(card);
+
     const name = document.createElement("h3");
     name.classList.add("games__game-name");
-    name.innerHTML = `${gameEntry.name}`
-    card.appendChild(name)
-    
-    const devName = document.createElement("p")
-    devName.classList.add("games__game-developer")  
-    devName.innerHTML = `${gameEntry.dev_name}`
-    card.appendChild(devName)
-}
+    name.innerHTML = `<a href="./scores.html?id=${gameEntry.id}">${gameEntry.name}</a>`;
+    card.appendChild(name);
+
+    const devName = document.createElement("p");
+    devName.classList.add("games__game-developer");
+    devName.innerHTML = `${gameEntry.dev_name}`;
+    card.appendChild(devName);
+};
 
 // Render all the game cards
 const renderGamesList = async () => {
-    allGames.forEach(game => {
-        createCard(game)
-    })
-}
+    allGames.forEach((game) => {
+        createCard(game);
+    });
+};
 
 const filterGames = (e) => {
     const searchTerm = e.target.value.trim().toLowerCase();
     const gameList = document.getElementById("games");
-    let games = Array.from(gameList.children)
+    let games = Array.from(gameList.children);
 
-    games.forEach(game => {
-        game.classList.remove("hidden")
+    games.forEach((game) => {
+        game.classList.remove("hidden");
 
         if (!game.innerText.toLowerCase().includes(searchTerm)) {
             game.classList.toggle("hidden");
         }
-    })
-}
+    });
+};
 
-gameFilter.addEventListener("input", filterGames)
-
+gameFilter.addEventListener("input", filterGames);
 
 // Quick Resize test for handling mobile menu closing if
 // its open and the window is resizes to a bigger screen

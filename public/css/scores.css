@@ -1,0 +1,51 @@
+.scores-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--txt-clr-dark);
+    color: var(--txt-clr-light);
+    gap: 1rem;
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.scores__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0.25rem solid black;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--txt-clr-light);
+}
+
+.scores__score {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 425px) {
+    .scores__card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .scores__rank {
+        padding: 0.5rem;
+    }
+
+    .scores__player-name {
+        padding: 0.5rem;
+    }
+
+    .scores__score {
+        text-align: left;
+        flex-grow: 1;
+        padding: 0.5rem;
+    }
+}
