@@ -43,7 +43,7 @@ const createCard = (scoreEntry, index) => {
 
     const name = document.createElement("p");
     name.classList.add("scores__player-name");
-    name.innerHTML = `${scoreEntry.player_name}</a>`;
+    name.innerHTML = `${scoreEntry.player_name}`;
     card.appendChild(name);
 
     const score = document.createElement("p");
