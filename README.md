@@ -21,9 +21,9 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - Demonstrate my current understanding of how to consume and create REST API's
 
 ### Current TODOS
-- [ ] Implement '/cover-art' route
-    - [ ] Implement GET/:id
-    - [ ] Implement POST
+- [X] Implement '/cover-art' route
+    - [X] Implement GET/:id
+    - [X] Implement POST
 - [ ] Implement the HTML skeleton of the follow pages
     - [ ] signup.html
 - [ ] Ensure that all pages are responsive
