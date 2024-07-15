@@ -1,0 +1,129 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--txt-clr-dark);
+    color: var(--txt-clr-light);
+    gap: 1rem;
+}
+
+
+.form-wrapper {
+    padding: 1rem;
+    border: 0.25rem solid black;
+    background-color: white;
+    margin: 1rem;
+}
+
+.form {
+    /* margin: 0 .5rem 0 .5rem; */
+    /* display: flex;
+    flex-direction: column; */
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__name-label {
+    padding: .5rem 0;
+    /* font-size: 1.125rem; */
+}
+
+.form__name-input {
+    padding: 0.5rem;
+    border: 0.25rem solid black;
+    min-width: 50dvw;
+    max-width: 75%;
+    margin: .5rem 0;
+}
+
+.form__dev-label {
+    padding: .5rem 0;
+    /* font-size: 1.125rem; */
+}
+
+.form__dev-input {
+    padding: 0.5rem;
+    border: 0.25rem solid black;
+    min-width: 50dvw;
+    max-width: 75%;
+    margin: .5rem 0;
+}
+
+.form__upload {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.form__upload-preview {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    align-self: center;
+    aspect-ratio: auto 16/9;
+}
+
+.form__upload-label {
+    cursor: pointer;
+    margin: .5rem auto 0 auto;
+    border: .25rem solid black;
+    padding: 1rem;
+    background-color: var(--bg-clr-md);
+    color: var(--txt-clr-light);
+    /* font-size: .75rem; */
+}
+
+.form__upload-label:hover {
+    color: #9dff00;
+}
+
+.form__upload-input {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.form__upload-btn {
+    grid-column: span 2;
+    max-width: 50%;
+    margin: 2rem auto 1rem auto;
+    padding: 1rem 0.5rem;
+    border: 0.25rem solid black;
+    background-color: var(--bg-clr-md);
+    color: var(--txt-clr-light);
+    cursor: pointer;
+    /* font-size: 1.125rem; */
+}
+
+.form__upload-btn:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+
+.signup-result {
+    display: flex;
+    padding: 1rem;
+    border: 0.25rem solid black;
+    background-color: white;
+    margin: 1rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-result__message {
+    padding: .5rem;
+}
+
+.signup-result__game-id {
+    padding: .5rem
+}

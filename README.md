@@ -24,6 +24,6 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - [X] Implement '/cover-art' route
     - [X] Implement GET/:id
     - [X] Implement POST
-- [ ] Implement the HTML skeleton of the follow pages
-    - [ ] signup.html
+- [X] Implement the HTML skeleton of the follow pages
+    - [X] signup.html
 - [ ] Ensure that all pages are responsive

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register Your Game" />
+
+    <link rel="stylesheet" href="./css/site.css">
+    <link rel="stylesheet" href="./css/signup.css">
+
+   
+    <title>Highest of the HI | Sign Up</title>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <nav class="nav">
+                <p class="nav__logo">Highest of the HI</p>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="./index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav__list-item">
+                        <a
+                            class="nav__list-item__link"
+                            href="./index.html#about"
+                            >About</a
+                        >
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="./games.html">Games</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="./search.html"
+                            >Search</a
+                        >
+                    </li>
+                    <!-- <li class="nav__list-item hidden">
+                        <a class="nav__list-item__link" href="#">Menu</a>
+                    </li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="signup">
+                <h1>Sign Up</h1>
+            </section>
+            <section class="form-wrapper">
+
+                <form class="form" id="submit-form" method="post" enctype="multipart/form-data">
+                    <article class="form__data">
+                        <label class="form__name-label" for="game-name">Game Name</label>
+                        <input class="form__name-input" type="text" name="name" id="game-name" placeholder="Enter Game Name" required autocomplete="additional-name">
+    
+                        <label class="form__dev-label" for="dev-name">Developer Name</label>
+                        <input class="form__dev-input" type="text" name="dev_name" id="dev-name" placeholder="Enter Dev Name" required>
+                    </article>
+                    <article class="form__upload">
+                        <label class="form__upload-label" for="uploadInput">Upload Cover Art</label>
+                        <input id="uploadInput" class="form__upload-input" type="file" name="cover_art" id="cover-art" required>
+                        <img id="uploadPreview" class="form__upload-preview" alt="" >
+                    </article>
+                    
+                    
+                    
+
+                    <button class="form__upload-btn" type="submit" >Submit game</button>
+                </form>
+            </section>
+
+            <section class="signup-result">
+                <p class="signup-result__message">Success</p>
+                <p class="signup-result__game-id">API KEY DISPLAYED HERE</p>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__info">&copy; 2024 Dan Collins</p>
+        </footer>
+    </div>
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>

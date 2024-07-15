@@ -10,6 +10,11 @@
     --txt-clr-light: white;
 }
 
+@font-face {
+    font-family: "Press Start 2P";
+    src: url(../assets/PressStart2P-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -66,7 +71,7 @@ body {
 }
 
 .nav__list-item__link:hover {
-    color: hsl(83, 100%, 50%);
+    color: #9dff00;
 }
 
 /************* Footer Classes **********/
