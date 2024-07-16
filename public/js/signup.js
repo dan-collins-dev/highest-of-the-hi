@@ -37,7 +37,7 @@ submitBtn.addEventListener("click", async e => {
     const coverArtData = new FormData();
     coverArtData.set("cover_art", formData.get("cover_art"))
 
-    console.log(formData.get("cover_art"))
+    // console.log(formData.get("cover_art"))
 
     const coverArtRes = await fetch("http://localhost:6500/api/cover-art", {
         method: "POST",
@@ -62,4 +62,13 @@ submitBtn.addEventListener("click", async e => {
 
     let gameResData = await gameRes.json();
     console.log(gameResData);
+
+    const formWrapper = document.querySelector(".form-wrapper")
+    formWrapper.classList.toggle("hidden");
+
+    const signupResult = document.querySelector(".signup-result")
+    signupResult.classList.toggle("hidden")
+
+    const gameId = document.querySelector(".signup-result__game-id")
+    gameId.innerHTML = gameResData.data.id;
 })

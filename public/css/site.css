@@ -86,11 +86,6 @@ body {
     color: white;
 }
 
-/****** Utility Classes *****/
-.hidden {
-    display: none;
-}
-
 /******* Media Queries ********/
 /*============================*/
 /* breakpoints: 768, 425 */
