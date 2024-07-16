@@ -15,7 +15,7 @@
     src: url(../assets/PressStart2P-Regular.ttf);
 }
 
-* {
+*:not(dialog) {
     box-sizing: border-box;
     margin: 0;
     padding: 0;

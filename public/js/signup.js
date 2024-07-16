@@ -1,19 +1,35 @@
 "use strict"
 
-const btn = document.querySelector("button");
+const submitBtn = document.getElementById("submission-btn");
 const nameInput = document.getElementById("game-name")
 const devInput = document.getElementById("dev-name")
 const preview = document.getElementById("uploadPreview");
 const uploadInput = document.getElementById("uploadInput")
+const dialog = document.querySelector("dialog")
+const closeBtn = document.getElementById("closeBtn")
 
-
-uploadInput.addEventListener("change", (e) => {
-    preview.src = URL.createObjectURL(e.target.files[0])
+closeBtn.addEventListener("click", () => {
+    dialog.close()
 })
 
 
-btn.addEventListener("click", async e => {
+uploadInput.addEventListener("change", (e) => {
+    if (uploadInput.files[0] !== undefined) {
+        preview.src = URL.createObjectURL(e.target.files[0])
+    } else {
+        preview.src = "../images/defaultCoverArt.png"
+    }
+})
+
+
+submitBtn.addEventListener("click", async e => {
     e.preventDefault();
+
+    // Manual check to see if all fields and cover photo have been populated
+    if (nameInput.value === "" || devInput.value === "" || uploadInput.files[0] === undefined) {
+        dialog.showModal();
+        return;
+    }
 
     const form = document.getElementById("submit-form")
     const formData = new FormData(form)
@@ -27,13 +43,8 @@ btn.addEventListener("click", async e => {
         method: "POST",
         body: coverArtData
     })
-    // console.log(res)
-    // console.log(baseUrl)
+
     let coverArtResData = await coverArtRes.json()
-    // console.log(resData.data)
-    
-    // was using during testing
-    // preview.src = coverArtResData.data.url
 
     const game = {
         "name": formData.get("name"),
@@ -47,10 +58,8 @@ btn.addEventListener("click", async e => {
         headers: {
             "Content-type": "application/json; charset=UTF-8"
         }
-
     })
 
     let gameResData = await gameRes.json();
     console.log(gameResData);
 })
-

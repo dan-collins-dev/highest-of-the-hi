@@ -67,6 +67,9 @@
     height: auto;
     align-self: center;
     aspect-ratio: auto 16/9;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .form__upload-label {
@@ -104,12 +107,6 @@
     /* font-size: 1.125rem; */
 }
 
-.form__upload-btn:disabled {
-    opacity: 0.3;
-    cursor: default;
-}
-
-
 .signup-result {
     display: flex;
     padding: 1rem;
@@ -127,3 +124,10 @@
 .signup-result__game-id {
     padding: .5rem
 }
+
+
+.validation-modal {}
+
+.validation-modal__desc {}
+
+.validation-modal__close-btn {}
