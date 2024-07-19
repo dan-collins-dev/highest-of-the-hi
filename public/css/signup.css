@@ -8,7 +8,6 @@
     gap: 1rem;
 }
 
-
 .form-wrapper {
     padding: 1rem;
     border: 0.25rem solid black;
@@ -28,8 +27,7 @@
 }
 
 .form__name-label {
-    padding: .5rem 0;
-    /* font-size: 1.125rem; */
+    padding: 0.5rem 0;
 }
 
 .form__name-input {
@@ -37,12 +35,11 @@
     border: 0.25rem solid black;
     min-width: 50dvw;
     max-width: 75%;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 
 .form__dev-label {
-    padding: .5rem 0;
-    /* font-size: 1.125rem; */
+    padding: 0.5rem 0;
 }
 
 .form__dev-input {
@@ -50,7 +47,7 @@
     border: 0.25rem solid black;
     min-width: 50dvw;
     max-width: 75%;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 
 .form__upload {
@@ -71,12 +68,11 @@
 
 .form__upload-label {
     cursor: pointer;
-    margin: .5rem auto 0 auto;
-    border: .25rem solid black;
+    margin: 0.5rem auto 0 auto;
+    border: 0.25rem solid black;
     padding: 1rem;
     background-color: var(--bg-clr-md);
     color: var(--txt-clr-light);
-    /* font-size: .75rem; */
 }
 
 .form__upload-label:hover {
@@ -85,11 +81,11 @@
 
 .form__upload-input {
     width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
 .form__upload-btn {
@@ -101,7 +97,6 @@
     background-color: var(--bg-clr-md);
     color: var(--txt-clr-light);
     cursor: pointer;
-    /* font-size: 1.125rem; */
 }
 
 .signup-result {
@@ -115,16 +110,16 @@
 }
 
 .signup-result__message {
-    padding: .5rem;
+    padding: 0.5rem;
+    line-height: 2rem;
 }
 
 .signup-result__game-id {
-    padding: .5rem
+    padding: 0.5rem;
 }
 
-
 .validation-modal {
-    border: .25rem solid black;
+    border: 0.25rem solid black;
 }
 
 .validation-modal::backdrop {
@@ -137,8 +132,8 @@
     row-gap: 1rem;
 }
 
-
-.validation-modal__desc {}
+.validation-modal__desc {
+}
 
 .validation-modal__close-btn {
     max-width: 50%;
@@ -150,24 +145,18 @@
     cursor: pointer;
 }
 
-
 /****** Utility Classes *****/
 .hidden {
     display: none;
 }
 
-
 /******* Media Queries ********/
-/*============================*/
-/* breakpoints: 768, 425 */
-
 @media (max-width: 768px) {
-    
-}
-
-@media (max-width: 425px) {
     .form {
         display: flex;
         flex-direction: column;
     }
+}
+
+@media (max-width: 425px) {
 }

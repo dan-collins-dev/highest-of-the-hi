@@ -23,6 +23,17 @@ const getScores = async (id) => {
     }
 };
 
+const getGameName = async (id) => {
+    try {
+        const response = await fetch(`http://localhost:6500/api/games/${id}`);
+        const gameData = await response.json();
+        const headerTitle = document.querySelector(".scores-header__title");
+        headerTitle.innerHTML = `${gameData.data.name} HI-Scores`;
+    } catch (error) {
+        console.log(error);
+    }
+};
+
 const renderScoresList = async () => {
     allScores.forEach((score, index) => {
         createCard(score, index);
@@ -57,3 +68,4 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 getScores(id);
+getGameName(id);

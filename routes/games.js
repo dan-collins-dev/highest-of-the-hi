@@ -5,7 +5,7 @@ const router = express.Router();
 const gamesController = require("../controllers/gamesController");
 
 // GET request that returns all games stored
-router.get("/",  (req, res, next) => {
+router.get("/", (req, res, next) => {
     gamesController.getAllGames(
         (data) => {
             res.status(200).json({
@@ -56,7 +56,7 @@ router.post("/", (req, res, next) => {
                 status: 201,
                 statusText: "Game Added",
                 message: `Game added`,
-                data: data
+                data: data,
             });
         },
         (err) => {

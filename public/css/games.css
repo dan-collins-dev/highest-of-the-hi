@@ -16,10 +16,6 @@
     max-width: 75%;
 }
 
-.hidden {
-    display: none;
-}
-
 /********** Classes for Game Section ****************/
 .games {
     display: grid;
@@ -49,6 +45,12 @@
     padding: 1rem 0;
 }
 
+/******* Utility Classes ********/
+.hidden {
+    display: none;
+}
+
+/******* Media Queries *******/
 @media (max-width: 768px) {
     .games {
         display: grid;

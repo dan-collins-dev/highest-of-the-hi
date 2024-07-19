@@ -2,33 +2,40 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="description" content="A Rest API for Arcade-Style Indie Games">
-        <link rel="stylesheet" href="./css/site.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="A Rest API for Arcade-Style Indie Games"
+        />
+        <link rel="stylesheet" href="./css/site.css" />
         <link rel="stylesheet" href="./css/index.css" />
-        
+
         <title>Highest of the HI</title>
     </head>
     <body>
-
         <header>
             <nav class="nav">
                 <p class="nav__logo">Highest of the HI</p>
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__list-item__link" href="#">Home</a></li>
-                    <li class="nav__list-item"><a class="nav__list-item__link" href="#about">About</a></li>
-                    <li class="nav__list-item"><a class="nav__list-item__link" href="./games.html">Games</a></li>
-                    <li class="nav__list-item"><a class="nav__list-item__link" href="./search.html">Search</a></li>
-                    <li class="nav__list-item hidden"><a class="nav__list-item__link" href="#">Menu</a></li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="#">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="#about">About</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a class="nav__list-item__link" href="./games.html"
+                            >Games</a
+                        >
+                    </li>
                 </ul>
-            </nav>            
+            </nav>
         </header>
 
         <main>
             <section class="hero">
                 <section class="hero__animation-wrapper">
-                    <div class="hero__animation">
-                    </div>
+                    <div class="hero__animation"></div>
                 </section>
                 <div class="hero__content">
                     <div class="hero__information">
@@ -36,71 +43,89 @@
                         <p class="hero__desc">Some kind of description text</p>
                     </div>
                     <div class="hero__buttons">
-                        <button class="hero__btn" onclick="location.href='./signup.html'">Sign-up</button> 
-                        <button class="hero__btn" onclick="location.href='#testimonials'">Testimonials</button>
+                        <button
+                            class="hero__btn"
+                            onclick="location.href='./signup.html'"
+                        >
+                            Sign-up
+                        </button>
+                        <button
+                            class="hero__btn"
+                            onclick="location.href='#testimonials'"
+                        >
+                            Testimonials
+                        </button>
                     </div>
                 </div>
-
             </section>
 
             <section id="featured-games" class="featured-games">
                 <h2 class="featured-games__title">Featured Games</h2>
                 <section class="featured-games-wrapper">
-
                     <article class="featured-games__card">
                         <h3 class="featured-games__card__name">Shred Quest</h3>
-                        <p class="featured-games__card__developer">dan.collins.dev</p>
+                        <p class="featured-games__card__developer">
+                            dan.collins.dev
+                        </p>
                     </article>
                     <article class="featured-games__card">
-                        <h3 class="featured-games__card__name">Shred Quest 2</h3>
-                        <p class="featured-games__card__developer">dan.collins.dev</p>
+                        <h3 class="featured-games__card__name">
+                            Shred Quest 2
+                        </h3>
+                        <p class="featured-games__card__developer">
+                            dan.collins.dev
+                        </p>
                     </article>
                     <article class="featured-games__card">
-                        <h3 class="featured-games__card__name">The Curse of Stulti</h3>
-                        <p class="featured-games__card__developer">dan.collins.dev</p>
+                        <h3 class="featured-games__card__name">
+                            The Curse of Stulti
+                        </h3>
+                        <p class="featured-games__card__developer">
+                            dan.collins.dev
+                        </p>
                     </article>
                 </section>
-
             </section>
 
             <section id="about" class="about">
                 <h2 class="about__title">About</h2>
                 <p class="about__paragraph">
-                    Highest of the HI is a service to provide arcade-style indie devlopers a platform to display hi-scores for their players and boost visibility for their games.
+                    Highest of the HI is a service to provide arcade-style indie
+                    devlopers a platform to display hi-scores for their players
+                    and boost visibility for their games.
                 </p>
                 <p class="about__paragraph">
-                    It also allows players to see their hi-scores and where they rank among other players.
+                    It also allows players to see their hi-scores and where they
+                    rank among other players.
                 </p>
             </section>
 
             <section id="testimonials" class="testimonials">
                 <h2 class="testimonials__title">Testimonials</h2>
                 <section class="testimonials-wrapper">
-
                     <article class="testimonial__card">
                         <h3 class="testimonial__card__name">Dan Collins</h3>
-                        <p class="testimonial__card__blurb">This site raised my sales numbers through the roof!</p>
+                        <p class="testimonial__card__blurb">
+                            This site raised my sales numbers through the roof!
+                        </p>
                     </article>
                     <article class="testimonial__card">
                         <h3 class="testimonial__card__name">Dan Collins</h3>
-                        <p class="testimonial__card__blurb">I don't know what life was like before adopting "Highest of the HI"</p>
+                        <p class="testimonial__card__blurb">
+                            I don't know what life was like before adopting
+                            "Highest of the HI"
+                        </p>
                     </article>
                     <article class="testimonial__card">
                         <h3 class="testimonial__card__name">Dan Collins</h3>
                         <p class="testimonial__card__blurb">Meh...</p>
                     </article>
                 </section>
-
             </section>
-
-            
         </main>
 
         <footer class="footer">
             <p class="footer__info">&copy; 2024 Dan Collins</p>
         </footer>
-
-
-
     </body>
 </html>
