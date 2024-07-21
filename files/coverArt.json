@@ -1,3 +1,44 @@
 [
-
+    {
+        "fieldname": "cover_art",
+        "originalname": "Tetris_Boxshot.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "C:\\codeky\\highest-of-the-hi\\uploads",
+        "filename": "Tetris_Boxshot.jpg",
+        "path": "C:\\codeky\\highest-of-the-hi\\uploads\\Tetris_Boxshot.jpg",
+        "size": 94629,
+        "id": "eedbda28-6cd3-4f6b-a1bd-aa1b8ea42760",
+        "url": "http://localhost:6500/uploads/Tetris_Boxshot.jpg",
+        "created_dts": "Sun, 21 Jul 2024 22:34:24 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:34:24 GMT"
+    },
+    {
+        "fieldname": "cover_art",
+        "originalname": "Missile Command Still.png",
+        "encoding": "7bit",
+        "mimetype": "image/png",
+        "destination": "C:\\codeky\\highest-of-the-hi\\uploads",
+        "filename": "Missile Command Still.png",
+        "path": "C:\\codeky\\highest-of-the-hi\\uploads\\Missile Command Still.png",
+        "size": 95332,
+        "id": "15c7a19c-d16b-4ff4-8362-5fc4d4f068ec",
+        "url": "http://localhost:6500/uploads/Missile Command Still.png",
+        "created_dts": "Sun, 21 Jul 2024 22:36:41 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:36:41 GMT"
+    },
+    {
+        "fieldname": "cover_art",
+        "originalname": "galaga.jpg",
+        "encoding": "7bit",
+        "mimetype": "image/jpeg",
+        "destination": "C:\\codeky\\highest-of-the-hi\\uploads",
+        "filename": "galaga.jpg",
+        "path": "C:\\codeky\\highest-of-the-hi\\uploads\\galaga.jpg",
+        "size": 211498,
+        "id": "c491f698-1efc-4751-a771-82facfaec8db",
+        "url": "http://localhost:6500/uploads/galaga.jpg",
+        "created_dts": "Sun, 21 Jul 2024 22:38:21 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:38:21 GMT"
+    }
 ]

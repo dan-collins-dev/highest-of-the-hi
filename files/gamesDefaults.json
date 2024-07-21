@@ -2,22 +2,25 @@
     {
         "name": "Tetris",
         "dev_name": "Alexey Pajitnov",
-        "id": "57c317ff-f3f0-4bc1-87cf-b33b660e6276",
-        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
-        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
-    },
-    {
-        "name": "Galaga",
-        "dev_name": "Namco",
-        "id": "bcbb09ab-bad6-481e-b615-0ec5a7256846",
-        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
-        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
+        "cover_art": "http://localhost:6500/uploads/Tetris_Boxshot.jpg",
+        "id": "91a96f73-4be8-4a8a-bfc1-3de45f48ab5d",
+        "created_dts": "Sun, 21 Jul 2024 22:34:24 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:34:24 GMT"
     },
     {
         "name": "Missile Command",
         "dev_name": "Dave Theurer",
-        "id": "314b6034-d296-42ee-b243-ddf76e8a9e26",
-        "created_dts": "Wed, 19 Jun 2024 01:44:17 GMT",
-        "last_modifed_dts": "Wed, 19 Jun 2024 01:44:17 GMT"
+        "cover_art": "http://localhost:6500/uploads/Missile Command Still.png",
+        "id": "7b0ea82d-7377-4084-bdbf-80dccd47157b",
+        "created_dts": "Sun, 21 Jul 2024 22:36:41 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:36:41 GMT"
+    },
+    {
+        "name": "Galaga",
+        "dev_name": "Namco",
+        "cover_art": "http://localhost:6500/uploads/galaga.jpg",
+        "id": "dd958ef3-780e-499f-bb10-3eb8f7f117a5",
+        "created_dts": "Sun, 21 Jul 2024 22:38:21 GMT",
+        "last_modified_dts": "Sun, 21 Jul 2024 22:38:21 GMT"
     }
 ]
