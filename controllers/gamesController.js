@@ -66,6 +66,15 @@ const addGame = async (newGame, resolve, reject) => {
         games.push(newGame);
         await fs.writeFile(FILE_NAME, JSON.stringify(games));
 
+        // Create related scores file
+        const SCORES_FILE = path.join(
+            path.dirname(__dirname),
+            `./files/scores/${newGame.id}.json`
+        );
+        console.log(SCORES_FILE);
+        const scoresData = [];
+        await fs.writeFile(SCORES_FILE, JSON.stringify(scoresData));
+
         resolve(newGame);
     } catch (error) {
         reject(error);

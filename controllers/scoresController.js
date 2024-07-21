@@ -41,8 +41,8 @@ const addScore = async (newScore, id, resolve, reject) => {
         newScore.created_dts = new Date().toUTCString();
         newScore.last_modified_dts = new Date().toUTCString();
 
-         // Add the new score
-         scores.push(newScore);
+        // Add the new score
+        scores.push(newScore);
 
         // Writing the new score list to JSON file
         await fs.writeFile(FILE_NAME, JSON.stringify(scores));
