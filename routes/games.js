@@ -6,7 +6,6 @@ const gamesController = require("../controllers/gamesController");
 
 // GET request that returns all games stored
 router.get("/", (req, res, next) => {
-    console.log(req.query);
     if (req.query.featured === "true") {
         gamesController.getFeaturedGames(
             (data) => {
