@@ -20,16 +20,15 @@ const getScores = async (id) => {
         scoresObj.forEach((score) => {
             allScores.push(score);
         });
-        
+
         const headerTitle = document.querySelector(".scores-header__title");
         headerTitle.innerHTML = `${gameName} HI-Scores`;
 
         // If no scores are present, display a message saying so
         if (allScores.length === 0) {
-            const noScoresMsg = document.querySelector(".scores__no-scores")
-            noScoresMsg.classList.toggle("hidden")
-        } 
-
+            const noScoresMsg = document.querySelector(".scores__no-scores");
+            noScoresMsg.classList.toggle("hidden");
+        }
 
         renderScoresList();
     } catch (error) {

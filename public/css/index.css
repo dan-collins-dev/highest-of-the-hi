@@ -183,8 +183,6 @@
     }
 }
 
-
-
 /******* Media Queries ********/
 /*============================*/
 /* breakpoints: 768, 425 */
@@ -238,4 +236,5 @@
     }
 }
 
-@media (max-width: 428px) {}
+@media (max-width: 428px) {
+}

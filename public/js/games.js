@@ -28,14 +28,14 @@ const createCard = async (gameEntry) => {
     gamesList.appendChild(card);
 
     const artWrapper = document.createElement("div");
-    artWrapper.classList.add("games__cover-art-wrapper")
-    card.appendChild(artWrapper)
+    artWrapper.classList.add("games__cover-art-wrapper");
+    card.appendChild(artWrapper);
 
-    const coverArt = document.createElement("img")
-    coverArt.classList.add("games__cover-art")
-    coverArt.src = gameEntry.cover_art
-    coverArt.alt = `Cover art for ${gameEntry.name}`
-    artWrapper.appendChild(coverArt)
+    const coverArt = document.createElement("img");
+    coverArt.classList.add("games__cover-art");
+    coverArt.src = gameEntry.cover_art;
+    coverArt.alt = `Cover art for ${gameEntry.name}`;
+    artWrapper.appendChild(coverArt);
 
     const name = document.createElement("h3");
     name.classList.add("games__game-name");

@@ -36,7 +36,7 @@
 
 .games__cover-art-wrapper {
     display: flex;
-    flex:1;
+    flex: 1;
     max-width: 200px;
     padding: 1rem;
 }
