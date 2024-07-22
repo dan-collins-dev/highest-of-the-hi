@@ -39,7 +39,7 @@ const createCard = async (gameEntry) => {
 
     const name = document.createElement("h3");
     name.classList.add("games__game-name");
-    name.innerHTML = `<a href="./scores.html?id=${gameEntry.id}">${gameEntry.name}</a>`;
+    name.innerHTML = `<a href="./scores.html?id=${gameEntry.id}&name=${gameEntry.name}">${gameEntry.name}</a>`;
     card.appendChild(name);
 
     const devName = document.createElement("p");

@@ -26,6 +26,19 @@
     text-align: right;
 }
 
+.scores__no-scores {
+    text-align: center;
+    line-height: 1.75rem;
+    border: 0.25rem solid black;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--txt-clr-light);
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 768px) {
 }
 

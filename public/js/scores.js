@@ -1,5 +1,9 @@
 "use strict";
 
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+const gameName = params.get("name");
 const allScores = [];
 
 // Makes a GET request that returns all scores
@@ -16,10 +20,17 @@ const getScores = async (id) => {
         scoresObj.forEach((score) => {
             allScores.push(score);
         });
-
+        
         const headerTitle = document.querySelector(".scores-header__title");
         headerTitle.innerHTML = `${gameName} HI-Scores`;
-        
+
+        // If no scores are present, display a message saying so
+        if (allScores.length === 0) {
+            const noScoresMsg = document.querySelector(".scores__no-scores")
+            noScoresMsg.classList.toggle("hidden")
+        } 
+
+
         renderScoresList();
     } catch (error) {
         console.log(error);
@@ -54,10 +65,5 @@ const createCard = (scoreEntry, index) => {
     score.innerHTML = `${scoreEntry.score}`;
     card.appendChild(score);
 };
-
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-const gameName = params.get("name")
 
 getScores(id);
