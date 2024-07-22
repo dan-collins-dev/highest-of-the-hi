@@ -40,7 +40,8 @@ const addCoverArt = async (newCoverArt, resolve, reject) => {
         // Assign the cover art an id and timestamps for created and last
         // modified
         newCoverArt.id = uuidv4();
-        newCoverArt.url = `http://localhost:6500/uploads/${newCoverArt.originalname}`;
+
+        newCoverArt.url = `http://localhost:6500/uploads/${newCoverArt.originalname.replace(" ", "%20")}`;
         newCoverArt.created_dts = new Date().toUTCString();
         newCoverArt.last_modified_dts = new Date().toUTCString();
 

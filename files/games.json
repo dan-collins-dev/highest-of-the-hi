@@ -10,7 +10,7 @@
     {
         "name": "Missile Command",
         "dev_name": "Dave Theurer",
-        "cover_art": "http://localhost:6500/uploads/Missile Command Still.png",
+        "cover_art": "http://localhost:6500/uploads/Missile%20Command%20Still.png",
         "id": "7b0ea82d-7377-4084-bdbf-80dccd47157b",
         "created_dts": "Sun, 21 Jul 2024 22:36:41 GMT",
         "last_modified_dts": "Sun, 21 Jul 2024 22:36:41 GMT"

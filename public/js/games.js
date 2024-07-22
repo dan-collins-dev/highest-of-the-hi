@@ -1,6 +1,7 @@
 "use strict";
 const gameFilter = document.getElementById("game-filter");
 const allGames = [];
+const allCoverArt = [];
 
 // Makes a GET request that returns all games
 const getGames = async () => {
@@ -19,12 +20,22 @@ const getGames = async () => {
 };
 
 // create game card
-const createCard = (gameEntry) => {
+const createCard = async (gameEntry) => {
     const gamesList = document.getElementById("games");
 
     const card = document.createElement("article");
     card.classList.add("games__card");
     gamesList.appendChild(card);
+
+    const artWrapper = document.createElement("div");
+    artWrapper.classList.add("games__cover-art-wrapper")
+    card.appendChild(artWrapper)
+
+    const coverArt = document.createElement("img")
+    coverArt.classList.add("games__cover-art")
+    coverArt.src = gameEntry.cover_art
+    coverArt.alt = `Cover art for ${gameEntry.name}`
+    artWrapper.appendChild(coverArt)
 
     const name = document.createElement("h3");
     name.classList.add("games__game-name");
@@ -59,13 +70,5 @@ const filterGames = (e) => {
 };
 
 gameFilter.addEventListener("input", filterGames);
-
-// Quick Resize test for handling mobile menu closing if
-// its open and the window is resizes to a bigger screen
-/* window.addEventListener("resize", () => {
-    // if (document.innerHTML > )
-    console.log(`Window Width: ${window.innerWidth}`)
-    console.log("SOMETHING")
-}) */
 
 getGames();

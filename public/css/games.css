@@ -34,6 +34,23 @@
     background-color: var(--txt-clr-light);
 }
 
+.games__cover-art-wrapper {
+    display: flex;
+    flex:1;
+    max-width: 200px;
+    padding: 1rem;
+}
+
+.games__cover-art {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    aspect-ratio: auto 16/9;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
 .games__game-name {
     margin: 0.5rem;
     text-align: center;
@@ -43,6 +60,7 @@
 .games__game-developer {
     margin: 0.5rem;
     padding: 1rem 0;
+    text-align: center;
 }
 
 /******* Utility Classes ********/
