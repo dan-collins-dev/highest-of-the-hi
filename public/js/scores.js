@@ -17,18 +17,10 @@ const getScores = async (id) => {
             allScores.push(score);
         });
 
-        renderScoresList();
-    } catch (error) {
-        console.log(error);
-    }
-};
-
-const getGameName = async (id) => {
-    try {
-        const response = await fetch(`http://localhost:6500/api/games/${id}`);
-        const gameData = await response.json();
         const headerTitle = document.querySelector(".scores-header__title");
-        headerTitle.innerHTML = `${gameData.data.name} HI-Scores`;
+        headerTitle.innerHTML = `${gameName} HI-Scores`;
+        
+        renderScoresList();
     } catch (error) {
         console.log(error);
     }
@@ -66,6 +58,6 @@ const createCard = (scoreEntry, index) => {
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
+const gameName = params.get("name")
 
 getScores(id);
-getGameName(id);
