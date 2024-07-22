@@ -6,19 +6,36 @@ const gamesController = require("../controllers/gamesController");
 
 // GET request that returns all games stored
 router.get("/", (req, res, next) => {
-    gamesController.getAllGames(
-        (data) => {
-            res.status(200).json({
-                status: 200,
-                statusText: "OK",
-                statusMessage: "All games retrieved.",
-                data: data,
-            });
-        },
-        (err) => {
-            next(err);
-        }
-    );
+    console.log(req.query);
+    if (req.query.featured === "true") {
+        gamesController.getFeaturedGames(
+            (data) => {
+                res.status(200).json({
+                    status: 200,
+                    statusText: "OK",
+                    statusMessage: "Featured games retrieved.",
+                    data: data,
+                });
+            },
+            (err) => {
+                next(err);
+            }
+        );
+    } else {
+        gamesController.getAllGames(
+            (data) => {
+                res.status(200).json({
+                    status: 200,
+                    statusText: "OK",
+                    statusMessage: "All games retrieved.",
+                    data: data,
+                });
+            },
+            (err) => {
+                next(err);
+            }
+        );
+    }
 });
 
 // GET request that gets a single game by id

@@ -23,6 +23,36 @@ const getAllGames = async (resolve, reject) => {
     }
 };
 
+const getFeaturedGames = async (resolve, reject) => {
+    try {
+        // Grab "games.json"
+        const FILE_NAME = path.join(
+            path.dirname(__dirname),
+            "./files/games.json"
+        );
+
+        // Read the file
+        const gameData = await fs.readFile(FILE_NAME);
+        const games = JSON.parse(gameData);
+
+        // Creates a set to store 3 random game entries
+        // The set is used to ensure I have no duplicates
+        // in the featured games section
+        const randomGames = new Set();
+        while (randomGames.size < 3) {
+            randomGames.add(games[Math.floor(Math.random() * games.length)]);
+        }
+
+        // Store the set entries in an array that is passed
+        // into the resolve
+        const featuredGames = Array.from(randomGames);
+
+        resolve(featuredGames);
+    } catch (error) {
+        reject(error);
+    }
+};
+
 const getGameById = async (id, resolve, reject) => {
     try {
         // Grab "games.json"
@@ -81,4 +111,4 @@ const addGame = async (newGame, resolve, reject) => {
     }
 };
 
-module.exports = { getAllGames, getGameById, addGame };
+module.exports = { getAllGames, getGameById, addGame, getFeaturedGames };
