@@ -21,5 +21,9 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - Demonstrate my current understanding of how to consume and create REST API's
 
 ### Current TODOS
-- [ ] Update games page to include cover art
-- [ ] Ensure that all pages are responsive
+- [ ] Update index.html
+    - [ ] update hero section text and styling
+    - [ ] update featured games
+- [ ] Add a few more fake games to for content purposes 
+- [ ] Test across multiple browsers and operating systems
+- [ ] Create a game that uses the service
