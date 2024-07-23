@@ -22,5 +22,29 @@
         "id": "dd958ef3-780e-499f-bb10-3eb8f7f117a5",
         "created_dts": "Sun, 21 Jul 2024 22:38:21 GMT",
         "last_modified_dts": "Sun, 21 Jul 2024 22:38:21 GMT"
+    },
+    {
+        "name": "Space Rocks",
+        "dev_name": "Spacey Studios",
+        "cover_art": "http://localhost:6500/uploads/space-rocks.png",
+        "id": "503bd397-0a21-4082-ac4d-8476c595e20d",
+        "created_dts": "Tue, 23 Jul 2024 13:12:25 GMT",
+        "last_modified_dts": "Tue, 23 Jul 2024 13:12:25 GMT"
+    },
+    {
+        "name": "The Oasis",
+        "dev_name": "Mirage Productions",
+        "cover_art": "http://localhost:6500/uploads/the-oasis.png",
+        "id": "ef6f8cbb-e867-46fd-a10b-2c7c4c16a538",
+        "created_dts": "Tue, 23 Jul 2024 13:22:29 GMT",
+        "last_modified_dts": "Tue, 23 Jul 2024 13:22:29 GMT"
+    },
+    {
+        "name": "BoxCraft",
+        "dev_name": "KY Box Co.",
+        "cover_art": "http://localhost:6500/uploads/boxcraft.png",
+        "id": "a08ff849-3991-4be3-ac04-252bf587057e",
+        "created_dts": "Tue, 23 Jul 2024 16:06:38 GMT",
+        "last_modified_dts": "Tue, 23 Jul 2024 16:06:38 GMT"
     }
 ]
