@@ -23,7 +23,7 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 ### Current TODOS
 - [ ] Update index.html
     - [ ] update hero section text and styling
-    - [ ] update featured games
+    - [x] update featured games
 - [ ] Add a few more fake games to for content purposes 
 - [ ] Test across multiple browsers and operating systems
 - [ ] Create a game that uses the service
