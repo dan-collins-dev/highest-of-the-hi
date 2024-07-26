@@ -15,15 +15,12 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 4. CD into the cloned directory.
 5. Run `npm install` to install required packages
 6. To start the development server, run `npm run dev`
+7. In your browser, go to `http://localhost:6500`
 
 ## Goals of this Project
 - Demonstrate my current knowledge of responsive web design
 - Demonstrate my current understanding of how to consume and create REST API's
 
 ### Current TODOS
-- [ ] Update index.html
-    - [ ] update hero section text and styling
-    - [x] update featured games
-- [ ] Add a few more fake games to for content purposes 
 - [ ] Test across multiple browsers and operating systems
 - [ ] Create a game that uses the service

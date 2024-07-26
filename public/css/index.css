@@ -42,12 +42,15 @@
 .hero__title {
     z-index: 10;
     color: var(--txt-clr-light);
-    padding-bottom: 2rem;
+    padding: 1rem;
+    flex: 1;
 }
 
 .hero__desc {
     z-index: 10;
     color: var(--txt-clr-light);
+    padding: 1rem;
+    flex: 1;
 }
 
 .hero__buttons {
@@ -108,13 +111,6 @@
 }
 
 .featured-games__card {
-    /* background-color: white;
-    display: flex;
-    flex-direction: column;
-    border: 0.25rem solid black;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    min-width: 30%; */
     display: flex;
     flex-direction: column;
     border: 0.25rem solid black;
@@ -223,6 +219,12 @@
         font-size: 2rem;
         padding-bottom: 12rem;
         align-self: center;
+    }
+
+    .hero__desc {
+        align-self: center;
+        font-size: 1rem;
+        margin-bottom: .5rem;
     }
 
     .hero__buttons {

@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "player_name": "Dan",
+        "score": 10000,
+        "created_dts": "Wed, 24 Jul 2024 18:19:20 GMT",
+        "last_modified_dts": "Wed, 24 Jul 2024 18:19:20 GMT"
+    }
+]
