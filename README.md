@@ -10,8 +10,8 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 
 ## Installation
 1. Install [Node.js](https://nodejs.org/en)
-2. Run `node -v` and `npm -v`. These versions should be `>=` `v20.10.0` and `10.2.5` respectively.
-3. Open your terminal and run `git clone https://github.com/dan-collins-dev/highest-of-the-hi.git` in the directory of your choice.
+2. Open your terminal and run `node -v` and `npm -v`. These versions should be `>=` `v20.10.0` and `10.2.5` respectively.
+3. Run `git clone https://github.com/dan-collins-dev/highest-of-the-hi.git` in the directory of your choice.
 4. CD into the cloned directory.
 5. Run `npm install` to install required packages
 6. To start the development server, run `npm run dev`
