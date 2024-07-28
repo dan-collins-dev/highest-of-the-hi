@@ -22,5 +22,4 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - Demonstrate my current understanding of how to consume and create REST API's
 
 ### Current TODOS
-- [ ] Test across multiple browsers and operating systems
-- [ ] Create a game that uses the service
+- [ ] Create a game that uses the service (Stretch Goal)
