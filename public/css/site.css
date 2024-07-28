@@ -62,7 +62,7 @@ body {
 
 .nav__list-item {
     list-style-type: none;
-    padding: 0.25rem;
+    padding: 0.25rem 0.75rem;
 }
 
 .nav__list-item__link {
@@ -97,7 +97,7 @@ body {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
     .nav {
         flex-direction: column;
         background-color: var(--bg-clr-dark);
