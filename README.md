@@ -21,5 +21,12 @@ Highest of the HI is a fictional service that allows developers of arcade-style 
 - Demonstrate my current knowledge of responsive web design
 - Demonstrate my current understanding of how to consume and create REST API's
 
-### Current TODOS
-- [ ] Create a game that uses the service (Stretch Goal)
+## Connecting Your Game
+If you'd like to test this mock service out with your own game, follow these steps.
+
+1. Once the app is being served, click on the Sign-Up button.
+2. Enter your game's name, your developer name, and cover art for your game.
+3. After clicking the Submit button, an ID will be generated for you.
+4. You can GET and POST scores to the endpoint `http://localhost:6500/api/scores/[YourGeneratedID]`
+
+If you'd like to play the game I made specifically for this project, you can clone it from [this repo](https://github.com/dan-collins-dev/orbital-defense).

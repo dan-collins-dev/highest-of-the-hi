@@ -82,5 +82,19 @@
         "url": "http://localhost:6500/uploads/boxcraft.png",
         "created_dts": "Tue, 23 Jul 2024 16:06:38 GMT",
         "last_modified_dts": "Tue, 23 Jul 2024 16:06:38 GMT"
+    },
+    {
+        "fieldname": "cover_art",
+        "originalname": "cover-art.png",
+        "encoding": "7bit",
+        "mimetype": "image/png",
+        "destination": "C:\\codeky\\highest-of-the-hi\\uploads",
+        "filename": "cover-art.png",
+        "path": "C:\\codeky\\highest-of-the-hi\\uploads\\cover-art.png",
+        "size": 5774,
+        "id": "43929d27-fe5c-4d80-a4d9-c54ea1bdf90d",
+        "url": "http://localhost:6500/uploads/cover-art.png",
+        "created_dts": "Fri, 02 Aug 2024 22:55:31 GMT",
+        "last_modified_dts": "Fri, 02 Aug 2024 22:55:31 GMT"
     }
 ]
