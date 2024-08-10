@@ -1,6 +1,11 @@
 # Highest of the HI
 Highest of the HI is a fictional service that allows developers of arcade-style games to sign up and have their games' hi-scores displayed to the public. The back-end is an API built specifically for this project.
 
+## Code:YOU Feature Requirements
+1. Create a node.js web server using a modern framework such as Express.js
+2. Persist data to an external API and make the stored data accessible in your app
+3. Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
+
 ## Technologies Used
 | Tool       |  version  |
 |------------|-----------|
